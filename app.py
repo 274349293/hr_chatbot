@@ -23,7 +23,7 @@ app = Flask(__name__)
 CORS(app)
 
 logger.info("===============================================")
-logger.info("汇仁医药客服训练系统初始化开始")
+logger.info("汇仁医药客服对话系统初始化开始")
 logger.info("===============================================")
 
 # Azure OpenAI 配置
@@ -135,7 +135,7 @@ HTML_TEMPLATE = '''
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>汇仁医药客服训练系统</title>
+    <title>汇仁医药客服对话系统</title>
     <style>
         * {
             margin: 0;
@@ -315,7 +315,7 @@ HTML_TEMPLATE = '''
 </head>
 <body>
     <div class="header">
-        <h1>汇仁医药客服训练系统</h1>
+        <h1>汇仁医药客服对话系统</h1>
         <div id="session-info"></div>
     </div>
 
@@ -902,7 +902,7 @@ def get_session(session_id):
 
 
 if __name__ == '__main__':
-    logger.info("汇仁医药客服训练系统")
+    logger.info("汇仁医药客服对话系统")
     logger.info("====================")
     logger.info("启动中...")
     logger.info("访问地址: http://localhost:5000")
